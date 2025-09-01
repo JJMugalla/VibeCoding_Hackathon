@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.language-card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#answer-container {
+    min-height: 150px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+}

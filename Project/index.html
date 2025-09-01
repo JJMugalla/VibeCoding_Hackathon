@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyglotPals - Language Learning Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">PolyglotPals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" id="home-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="practice-link">Practice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="progress-link">Progress</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="premium-link">Go Premium</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Language Selection -->
+        <div class="row mb-4" id="language-selection">
+            <h2 class="text-center mb-4">Choose Your Language</h2>
+            <div class="col-md-4 text-center">
+                <div class="card language-card" data-lang="english">
+                    <div class="card-body">
+                        <h5 class="card-title">English</h5>
+                        <p class="card-text">Improve your English skills</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card language-card" data-lang="spanish">
+                    <div class="card-body">
+                        <h5 class="card-title">Español</h5>
+                        <p class="card-text">Mejora tu español</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card language-card" data-lang="swahili">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiswahili</h5>
+                        <p class="card-text">Boresha Kiswahili chako</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice Interface (initially hidden) -->
+        <div id="practice-interface" class="d-none">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 id="current-language">Practice: English</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="question-input" class="form-label">Ask a question about the language:</label>
+                        <textarea class="form-control" id="question-input" rows="3"></textarea>
+                    </div>
+                    <button id="ask-button" class="btn btn-primary">Ask PolyglotPals</button>
+                    
+                    <div class="mt-4" id="answer-container">
+                        <h4>Answer:</h4>
+                        <div class="card">
+                            <div class="card-body" id="answer-text">
+                                Your answer will appear here...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <button id="back-to-languages" class="btn btn-secondary">Choose Another Language</button>
+            </div>
+        </div>
+
+        <!-- Premium Section -->
+        <div class="row mt-5 d-none" id="premium-section">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-warning">
+                        <h3>Unlock Full Potential with Premium</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Premium features include:</p>
+                        <ul>
+                            <li>Unlimited questions</li>
+                            <li>Advanced grammar explanations</li>
+                            <li>Personalized learning path</li>
+                            <li>Progress tracking</li>
+                            <li>Offline access</li>
+                        </ul>
+                        <button id="subscribe-button" class="btn btn-success">Subscribe Now - $4.99/month</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2023 PolyglotPals. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://js.intrasend.io/v1/js/intrasend.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
